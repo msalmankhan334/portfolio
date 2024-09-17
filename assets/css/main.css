@@ -809,7 +809,7 @@ section,
 .stats .stats-item {
   background-color: var(--surface-color);
   margin-top: -27px;
-  padding: 30px 30px 25px 30px;
+  padding: 20px 20px 15px 20px;
   width: 100%;
   position: relative;
   text-align: center;
@@ -1473,4 +1473,15 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.profile-img {
+  border-radius: 50%; /* Makes the image circular */
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-bottom: 20px; /* Adds space between the image and the text below */
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
 }
