@@ -1475,13 +1475,52 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.profile-img {
-  border-radius: 50%; /* Makes the image circular */
-  width: 150px; /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  margin-bottom: 20px; /* Adds space between the image and the text below */
-  display: block; /* Makes the image a block-level element */
-  margin-left: auto; /* Centers the image horizontally */
-  margin-right: auto; /* Centers the image horizontally */
+#profile-container {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+#profile-picture {
+  width: 250px !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  display: block;
+  filter: brightness(0.85) !important;
+  opacity: 0.65 !important;
+  position: relative;
+  top: -30px;
+  padding: 5px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)); /* Soft gradient background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Slight shadow */
+  border: none; /* Remove border */
+  border-radius: 15px; /* Softer corners to blend better */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+  z-index: 2;
+}
+
+#profile-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%); /* Radial gradient to simulate merging */
+  z-index: 1;
+  border-radius: 15px;
+}
+
+#profile-picture:hover {
+  opacity: 0.85; /* Slight fade effect on hover */
+  transform: scale(1.02); /* Slight scale to create a blending effect */
+}
+
+#name {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
 }
