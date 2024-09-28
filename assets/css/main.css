@@ -1524,3 +1524,64 @@ section,
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
 }
+
+/* Style the play button */
+.glightbox .play-btn {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.glightbox .play-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.portfolio-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.portfolio-info p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.glightbox video {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-info a {
+  display: inline-block; /* Ensures proper spacing */
+  background: none; /* Remove any default background */
+  border: none; /* Remove border */
+  color: #000000; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  position: relative; /* Position for the icon */
+  padding: 10px 15px; /* Add some padding */
+  border-radius: 5px; /* Rounded corners for the link */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.portfolio-info a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+}
+
+.portfolio-content {
+  position: relative; /* Needed for absolute positioning of info */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.portfolio-content img,
+.portfolio-info a {
+  width: 100%; /* Make images and links take full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Apply rounded corners */
+}
+

@@ -199,4 +199,8 @@
 
   });
 
+  const lightbox = glightbox({
+    selector: '.glightbox'
+  });
+
 })();
