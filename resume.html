@@ -59,154 +59,73 @@
       </nav>
 
     </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/chat/cdn/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .pdf-container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 1rem;
+            background-color: #000000;
+        }
+        
+        .pdf-wrapper {
+            max-width: 1600px;
+            width: 95%;
+            margin: 0 auto;
+            background: #000000;
+            border: 1px solid #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .pdf-wrapper::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #000000;
+        }
+        
+        .pdf-viewer {
+            width: 100%;
+            height: calc(100vh - 100px);
+            border: none;
+            background: #000000;
+        }
+
+        /* Remove PDF viewer controls and ensure transparency */
+        ::-webkit-pdf-viewer {
+            background-color: rgba(18, 18, 18, 0.8) !important;
+        }
+    </style>
   </header>
 
   <main class="main">
 
-    <!-- Resume Section -->
     <section id="resume" class="resume section">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Muhammad Salman</h4>
-              <p><em>A motivated and results-driven Embedded Systems Engineer with a strong foundation in IoT, Bluetooth Mesh Networking, and firmware development. Seeking a challenging role that will allow me to utilize and enhance my technical skills while contributing to innovative engineering solutions.</em></p>
-              <ul>
-                <li>Pakistan,25000, KPK Peshawar</li>
-                <li>(+92) 334 1551884</li>
-                <li>msalmankhan334@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Science in Computer Systems Engineering</h4>
-              <h5>2015 - 2019</h5>
-              <p><em>University of Engineering and Technology Peshawar,Pakistan</em></p>
-            </div><!-- Edn Resume Item -->
-			
-			<h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Embedded System Engineer</h4>
-              <h5>2024 - Present</h5>
-              <p><em>Xmark Labs, LLC, USA</em></p>
-			  <ul>
-                <li>Implement Bluetooth Low Energy (BLE) solutions and work on Bluetooth Mesh Networks. </li>
-                <li>Developing Nosy Mesh Device. </li>
-                <li>Developing firmware for Nosy Mesh Device. </li>
-                <li>Making it more power efficient. </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-			
-			<div class="resume-item">
-              <h4>Senior Embedded Systems Engineer</h4>
-              <h5>2021 - 2024</h5>
-              <p><em>Chip Soul Technology (SMC-Private) Limited, Peshawar, Pakistan</em></p>
-              <ul>
-                <li>Develop firmware for the NRF52 Series, specializing in the NRF52840 SoC. </li>
-                <li>Utilize the NRF52 SDK for efficient and scalable firmware development. </li>
-                <li>Implement Bluetooth Low Energy (BLE) solutions and work on Bluetooth Mesh Networks. </li>
-                <li>Develop software for ESP32 boards focused on IoT applications. </li>
-                <li>Conduct hardware debugging and software testing, ensuring high reliability and performance. </li>
-                <li>Worked with MSP430, PIC, STM32, and STM8S chips, contributing to various projects and products. </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="resume-item">
-              <h4>R & D IoT Engineer</h4>
-              <h5>2020 - 2021</h5>
-              <p><em>Veevo Tech, Peshawar, Pakistan</em></p>
-              <ul>
-                <li>Created and developed IoT devices, sensors, and software, from conceptualization to deployment. </li>
-                <li>Conducted research, testing, and documentation for IoT solutions. </li>
-                <li>Designed, coded, and tested IoT features, focusing on robust and scalable solutions. </li>
-                <li>Provided innovative solutions for network connectivity and platform integration. </li>
-                <li>Developed ESP8266 NonOS SDK-based solutions, engaging in cross-platform compilation. </li>
-                <li>Worked on autonomous drone flight projects using Pixhawk4 flight controllers and mission planner software. </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-			
-			<div class="resume-item">
-              <h4>Network Engineer</h4>
-              <h5>2019 - 2020</h5>
-              <p><em>Sarhad Rural Support Program, Peshawar, Pakistan</em></p>
-              <ul>
-                <li>Develop basic scripting skills in Python or Bash to automate routine network tasks such as configuration management and log analysis. </li>
-                <li>Gain practical experience with essential network protocols (HTTP, DNS, DHCP, etc.) and tools for packet capture and analysis (Wireshark). </li>
-                <li>Enhance ability to communicate technical information effectively to various stakeholders and work collaboratively within a team, including documenting and presenting findings and solutions. </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-			
-			<div class="resume-item">
-              <h4>Trainee Engineer</h4>
-              <h5>2019 - 2019</h5>
-              <p><em>Premier Logistics Solution, Peshawar, Pakistan</em></p>
-              <ul>
-                <li>Troubleshot and maintained PCs, set up Local Area Networks, and configured routers and switches. </li>
-                <li>Provided support for Microsoft Word & Excel, ensuring smooth operation across the organization. </li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-			
-			
-			
-          </div>
-
-        </div>
-
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="resume-title">Technical Skills</h3>
-          <div class="resume-item pb-0">
-            <ul>
-              <li>Designing and developing embedded systems, including hardware and firmware. </li>
-              <li>Hands-on experience with STM32, nRF52, Arduino framework-based MCUs, and Raspberry Pi. </li>
-              <li>Firmware development with advanced skills in C/C++ programming for low-level firmware & proficiency with FreeRTOS and Zephyr. </li>
-              <li>Integrating sensors and managing ADC/DAC, I2C, SPI, UART & Used development tools like Keil, Segger Embedded Studio, IAR, VS Code, Git, and CMake.</li>
-              <li>Knowledgeable in TCP/IP, MQTT & Modbus Communication Protocols and others.</li>
-              <li>Debugging experience with oscilloscopes, logic analyzers, and in-circuit debuggers like J-link.</li>
-            </ul>
-          </div><!-- Edn Resume Item -->
-        </div>
-
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="resume-title">Certifications</h3>
-    <h5>KPYOUTH Employment Program (IoT)</h5>
-    <div class="resume-item pb-0">
-      <ul>
-        <p>This certification was awarded for completing the KPYOUTH Programme in Internet of Things (IoT). The program focused on practical skills and knowledge related to IoT systems, including Sensor Integration, Microcontroller Programming & Cloud Data Transmission.</p>
-      </ul>
-         
-    </div><!-- Edn Resume Item -->
-    
-    <h5>KPYOUTH Employment Program (IoT)</h5>
-    <div class="resume-item pb-0">
-      <ul>
-        <p>This certification was awarded for completing the KPYOUTH Programme, which focuses on using Raspberry Pi for Internet of Things (IoT) applications. The program covered Raspberry Pi Sensors Integration, Programming, Configuration & Cloud Connectivity.</p>
-      </ul>
-         
-    </div><!-- Edn Resume Item -->
-    
-    <h5>CMake Cross Platform Build Systems</h5>
-    <div class="resume-item pb-0">
-      <ul>
-        <p>Completed an online course on CMake build systems, focusing on CMake Fundamentals, Build Configuration & Advanced Features. This certification demonstrates proficiency in using CMake for efficient and scalable build system management in software development projects in C/C++. </p>
-      </ul>
-         
-    </div><!-- Edn Resume Item -->
-
-  </div>
-
-      </div>
-	  
-	
-    </section><!-- /Resume Section -->
-	
-
+            <div class="pdf-container">
+                <div class="pdf-wrapper">
+                    <embed 
+                        src="CV.pdf" 
+                        type="application/pdf" 
+                        class="pdf-viewer"
+                    >
+                </div>
+            </div>
+        </section>
   </main>
 
   <footer id="footer" class="footer dark-background">
